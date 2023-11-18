@@ -15,13 +15,15 @@ function validateform() {
         flag = 1;
     }
 
+
     if (pass.value == "") {
         document.getElementById("passerror").innerHTML = "Password is empty";
         flag = 0;
     }
+
     else {
         document.getElementById("passerror").innerHTML = "";
-        flag = 1;
+        flag = 0;
     }
 
     if (flag) {
