@@ -23,7 +23,7 @@ function validateform() {
 
     else {
         document.getElementById("passerror").innerHTML = "";
-        flag = 0;
+        flag = 1;
     }
 
     if (flag) {
