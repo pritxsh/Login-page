@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Unicorn Login</title>
+    <style>
+        body {
+
+            background-color: #a8c7df;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #container {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 5px 5px #4e9edb;
+        }
+
+        h2 {
+            margin: 0px 0px 10px 0px;
+
+        }
+
+        input {
+            width: 200px;
+            margin: 10px 0px;
+            padding: 10px;
+
+        }
+
+        input[type="submit"] {
+            width: 222px;
+            background-color: #0766AD;
+            border: 0px;
+            color: white;
+
+        }
+
+        #logo {
+            margin: 10px;
+            padding: 10px;
+            display: block;
+            text-align: center;
+
+        }
+
+        label {
+            display: block;
+            font-weight: bolder;
+            font-size: 19px;
+
+        }
+
+        .errorclass {
+            color: red;
+            margin: 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parentdiv">
+        <div id="logo">
+            <img src="logo.png" width="100px" height="90px" alt="">
+            <label>Smart Unicorn</label>
+        </div>
+        <div id="container">
+
+            <h2>Login</h2>
+            <form action="" onsubmit=" return validateform()">
+                <input type="text" id="text" placeholder="Username">
+                <br>
+                <p id="usererror" class="errorclass"></p>
+                <input type="password" id="password" placeholder="Password">
+                <br>
+                <p id="passerror" class="errorclass"></p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
